@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch first</title>
+    <link rel="stylesheet" href="./catQuestionnaire.css">
+    <script src="./catQuestionnaireFetchFirst.js" async></script>
+</head>
+<body>
+    
+    <form method="post" action="https://httpbin.org/post">
+        <label for="cat-breed">Favorite cat breed</label>
+        <select class="input-box" name="breed" id="cat-breed"  required>
+            <option hidden disabled selected value> -- select breed -- </option>
+        </select>
+        
+        <label for="cat-quantity">How many cats have you had?</label>
+        <input class="input-box" type="number" name="quantity" id="cat-quantity" min="0" value="0" required/>
+        
+        <label for="cat-name">Favorite cat name</label>
+        <input class="input-box" name="name" id="cat-name" pattern="^[A-Z][a-z]+$"
+            title="Favorite cat name must consist of letters only and start with a capital" required/>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body, select, input, button {
+    font-family: 'Trebuchet MS';
+    font-size: 1.1rem;
+}
+
+label, .input-box {
+    margin: 10px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 550px;
+}
+

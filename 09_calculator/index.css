@@ -1,0 +1,101 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family:'Segoe UI', sans-serif;
+  font-size: 1.2rem;
+
+}
+
+.container {
+  display:  grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  min-width: 900px;
+}
+
+.column {
+  border: 1px black solid;
+  box-shadow: 5px 5px 5px 5px gray ;
+  padding: 0.5rem;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+}
+
+.season, .maximum {
+  display:grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.5rem;
+  justify-content: center;
+}
+
+
+
+.calc {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .4rem;
+  }
+  
+  #buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .4rem;
+  }
+
+  button {
+    height: 2rem;
+    font-size: inherit;
+  }
+
+  input {
+    font-family: inherit;
+    font-size: inherit;
+    max-width: 100px;
+  }
+
+  .result {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+  }
+
+  .frame {
+    border: 1px solid grey;
+    color: grey;
+    margin-top: .7rem;
+  }
+
+  .frame p {
+    background-color: white;
+    margin: -1rem .5rem 0.5rem .5rem;
+    width: fit-content;
+  }
+
+
+  
+
+ @media only screen and (max-device-width:500px) {
+  body {
+    font-size: 2rem;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    margin: 5%;
+  }
+  .column {
+    padding: 5%
+  }
+  
+  button {
+    height: 70px;
+  }
+
+  .result {
+    font-size: 2em;
+  }
+
+ }

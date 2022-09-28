@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock-paper-scissors game</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <h1>Rock-paper-scissors game</h1>
+        <main  id="main">
+            
+            <button id="startButton" class="slow disappear">Start game</button>
+            <div id="result"></div>
+            <div class="radioGroup named_border" id="choises" >
+                <p>Make a choise</p>
+                <input type="radio" name="choice" id="rock" class="hide_rb" />
+                <label for="rock">
+                    <img src="./rock.svg" alt="Rock" />
+                </label>
+    
+                <input type="radio" name="choice" id="paper" class="hide_rb" />
+                <label for="paper">
+                    <img src="./paper.svg" alt="Paper" />
+                </label>
+    
+                <input type="radio" name="choice" id="scissors" class="hide_rb" />
+                <label for="scissors">
+                    <img src="./scissors.svg" alt="Scissors" />
+                </label>
+            </div>
+            <div id="game-field">
+                <div class="named_border">
+                    <p>Your choise</p>
+                    <img  id="user-choice" src=""/>
+                </div>
+                <div class="named_border">
+                    <p>Computer choise</p>
+                    <img id="computer-choice" src=""/>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="./index.js"></script>
+</html>
