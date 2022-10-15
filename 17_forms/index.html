@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+   
+    <div class="container">
+        <h2>Create refund</h2>
+        <form id="detail-form">
+            
+            <h3>Enter details</h3>
+            <div class="details">
+                <div class="detail-item">
+                    <label>
+                        What to refund
+                        <input name="name" placeholder="Text" required/>
+                    </label>
+                </div>
+                <div class="detail-item">
+                    <label>
+                        Expected money amount
+                        <input name="amount" placeholder="Number" type="number" min="0" required/>
+                    </label>
+                    
+                </div>
+                <div class="detail-item">
+                    <label>
+                        Who refunds
+                        <input name="debtor" placeholder="Text" required/>
+                    </label>
+                </div>
+                <div class="detail-item">
+                    <label>
+                        Due date
+                        <input name="name" type="date" placeholder="Text" required/>
+                    </label>
+                </div>
+            </div>
+            <button id="createRefund" type="submit" >Create refund</button>
+            <div id="result"></div>
+        </form>
+    </div>
+    <div class="container">
+        <h2>Refund tracker</h2>
+        <button id="getRefund">Get refund</button>
+        <table>
+            <thead>
+                <tr>    
+                    <th>Created</th>
+                    <th>What</th>
+                    <th>Who</th>
+                    <th>How much</th>
+                    <th>Due date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="refundList">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
